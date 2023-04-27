@@ -42,7 +42,7 @@ export class AppComponent  implements OnInit {
     console.log (
       `lat: ${position.coords.latitude}, lon: ${position.coords.longitude}`
     );
-    if(position.coords.latitude ==desLat) {
+    if(position.coords.latitude === desLat) {
       navigator.geolocation.clearWatch(id);
     }
   }, (err) => {
