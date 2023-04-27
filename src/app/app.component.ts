@@ -48,7 +48,7 @@ export class AppComponent  implements OnInit {
   }, (err) => {
     console.log(err);
   }, {
-     enableHighAccuracy: false,
+     enableHighAccuracy: true,
      timeout: 5000,
      maximumAge: 0
   });
