@@ -28,7 +28,7 @@ export class AppComponent  implements OnInit {
          maxZoom: 19,
          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
-        var marker = L.marker(latLong).addTo(map);
+        let marker = L.marker(latLong).addTo(map);
 
         marker.bindPopup('<b> Estou aqui</b>').openPopup
     });
